@@ -83,6 +83,18 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+  font-weight: 400;
+}
+
+.emphasis {
+  font-style: italic;
+}
+
+.align-right {
+  text-align: right;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -142,7 +154,7 @@ body {
 section {
   padding-left: 35px;
   padding-right: 35px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .section_top {
@@ -159,6 +171,7 @@ section {
   width: 80%;
   margin: 0 auto;
   padding-bottom: 20px;
+  padding-top: 50px;
 }
 
 .section_top h1 {
@@ -175,5 +188,26 @@ section {
 
 .section_top .btn_std {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.section_featuredIn {
+  background-color: #f4fafa;
+}
+
+.section_featuredIn {
+  text-align: center;
+}
+
+.section_featuredIn .featuresContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.featuresQuote {
+  padding-bottom: 60px;
 }
