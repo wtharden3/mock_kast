@@ -211,3 +211,20 @@ section {
 .featuresQuote {
   padding-bottom: 60px;
 }
+
+.section_whatIsKast {
+  text-align: center;
+  background-image: url(img/green-bg.jpg);
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 60px;
+}
+
+.section_whatIsKast h2 {
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.section_whatIsKast p:not(:last-child) {
+  margin-bottom: 20px;
+}
