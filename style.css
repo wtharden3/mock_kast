@@ -107,6 +107,62 @@ h2 {
   padding-right: 10px;
 }
 
+.navList {
+  display: none
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    height: 83px;
+    display: grid;
+    grid-template-columns: 205px auto 120px;
+    grid-column-gap: 40px;
+    z-index: 900;
+  }
+
+  .topNav {
+    display: flex;
+    background: pink;
+    align-self: center;
+  }
+
+  .openKastButton {
+    order: 3;
+    width: 100%;
+    align-self: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .navList {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    /* align-self: center; */
+    /* background-color: red; */
+  }
+
+  .navList li:not(last-child) {
+    margin-right: 40px;
+  }
+
+  .navBtnGroup,
+  .navBtnGroup .navButtonLine {
+    display: none;
+  }
+
+  .logo {
+    order: 1;
+    /* background-color: peru; */
+    align-self: center;
+  }
+
+
+  .nav {
+    order: 2;
+  }
+}
+
 .btn {
   color: #fff;
 }
@@ -127,10 +183,26 @@ h2 {
   height: 30.92px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .logo img {
+    width: 201px;
+    height: 46.03px;
+  }
+}
+
 .openKastButton {
   color: #fff;
   border: 1px solid #fff;
   background-color: transparent;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* .openKastButton {
+    color: #fff;
+    border: 1px solid #fff;
+    
+  } */
+
 }
 
 .navBtnGroup {
