@@ -89,7 +89,7 @@ h2 {
 }
 
 p {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 ul {
@@ -250,6 +250,8 @@ section {
   background-size: cover;
   color: #fff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .section_top img {
@@ -275,6 +277,8 @@ section {
 .section_top .btn_std {
   margin-top: 30px;
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section_featuredIn {
