@@ -125,57 +125,6 @@ ul {
   display: none
 }
 
-@media only screen and (min-width: 1024px) {
-  .header {
-    height: 83px;
-    display: grid;
-    grid-template-columns: 205px auto 120px;
-    column-gap: 40px;
-  }
-
-  .topNav {
-    display: flex;
-    align-self: center;
-    justify-self: end;
-  }
-
-  .openKastButton {
-    order: 3;
-    width: 100%;
-    align-self: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-
-  .navList {
-    display: flex;
-    justify-content: space-evenly;
-    color: #fff;
-
-    /* align-self: center; */
-    /* background-color: red; */
-  }
-
-  .navList li:not(last-child) {
-    margin-right: 40px;
-  }
-
-  .navBtnGroup,
-  .navBtnGroup .navButtonLine {
-    display: none;
-  }
-
-  .logo {
-    order: 1;
-    /* background-color: peru; */
-    align-self: center;
-  }
-
-
-  .nav {
-    order: 2;
-  }
-}
 
 .btn {
   color: #fff;
@@ -261,6 +210,12 @@ section {
   margin: 0 auto;
   padding-bottom: 20px;
   padding-top: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .section_top img {
+    padding-top: 80px;
+  }
 }
 
 .section_top h1 {
@@ -378,6 +333,57 @@ section {
 
 .section_tryKastTV h3 {
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 1024px) {
+  .header {
+    height: 83px;
+    display: grid;
+    grid-template-columns: 205px auto 120px;
+    column-gap: 40px;
+  }
+
+  .topNav {
+    display: flex;
+    align-self: center;
+    justify-self: end;
+  }
+
+  .openKastButton {
+    order: 3;
+    width: 100%;
+    align-self: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .navList {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+
+    /* align-self: center; */
+    /* background-color: red; */
+  }
+
+  .navList li:not(last-child) {
+    margin-right: 40px;
+  }
+
+  .navBtnGroup,
+  .navBtnGroup .navButtonLine {
+    display: none;
+  }
+
+  .logo {
+    order: 1;
+    /* background-color: peru; */
+    align-self: center;
+  }
+
+
+  .nav {
+    order: 2;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
