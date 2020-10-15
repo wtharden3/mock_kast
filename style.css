@@ -257,6 +257,7 @@ section {
 .section_top img {
   min-width: 260px;
   width: 80%;
+  width: 600px;
   margin: 0 auto;
   padding-bottom: 20px;
   padding-top: 50px;
