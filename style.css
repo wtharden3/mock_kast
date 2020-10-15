@@ -136,20 +136,21 @@ ul {
 .btn {
   color: #fff;
 }
-.btn:hover {
-  transform
-}
 
 .btn_std {
-  background: orange;
+  background: #FE9000;
   text-transform: uppercase;
   font-weight: 700;
-  border: 1px orange solid;
+  border: 1px transparent solid;
   border-radius: 2px;
   max-width: 315px;
   padding: 8px 64px;
+  transition: all 0.3s;
 }
-
+.btn_std:focus,
+.btn_std:hover {
+  border: 1px #FE9000 solid;
+}
 
 
 .logo img {
@@ -170,6 +171,12 @@ ul {
   border: 1px solid #fff;
   background-color: transparent;
 }
+
+.openKastButton:hover,
+.openKastButton:focus{
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
 
 @media only screen and (min-width: 1024px) {
   /* .openKastButton {
