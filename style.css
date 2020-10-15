@@ -306,6 +306,7 @@ section {
 
 @media only screen and (min-width: 1024px) {
   .section_featuredIn .featuresContainer {
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 70px;
   }
 }
