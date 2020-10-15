@@ -85,10 +85,23 @@ body {
 
 h2 {
   font-weight: 400;
+  font-size: 34px;
+}
+
+p {
+  font-size: 24px;
+}
+
+ul {
+  font-size: 20px;
 }
 
 .emphasis {
   font-style: italic;
+}
+
+.emphasis.author {
+  font-size: 20px;
 }
 
 .align-right {
@@ -100,12 +113,13 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
+
 
 .navList {
   display: none
@@ -116,14 +130,13 @@ h2 {
     height: 83px;
     display: grid;
     grid-template-columns: 205px auto 120px;
-    grid-column-gap: 40px;
-    z-index: 900;
+    column-gap: 40px;
   }
 
   .topNav {
     display: flex;
-    background: pink;
     align-self: center;
+    justify-self: end;
   }
 
   .openKastButton {
@@ -138,6 +151,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     color: #fff;
+
     /* align-self: center; */
     /* background-color: red; */
   }
@@ -271,6 +285,10 @@ section {
   text-align: center;
 }
 
+.section_featuredIn h2 {
+  color: rgba(0, 0, 0, .8);
+}
+
 .section_featuredIn .featuresContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -278,10 +296,28 @@ section {
   margin-bottom: 50px;
   column-gap: 40px;
   row-gap: 40px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .section_featuredIn .featuresContainer {
+    row-gap: 70px;
+  }
+}
+
+.feature {
+  justify-self: center;
 }
 
 .featuresQuote {
   padding-bottom: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.featuresQuote p {
+  font-size: 24px;
+  color: rgba(0, 0, 0, .8);
 }
 
 .section_whatIsKast {
@@ -289,7 +325,8 @@ section {
   background-image: url(img/green-bg.jpg);
   background-size: cover;
   color: #fff;
-  padding-bottom: 60px;
+  padding-bottom: 110px;
+  padding-top: 110px;
 }
 
 .section_whatIsKast h2 {
@@ -298,5 +335,9 @@ section {
 }
 
 .section_whatIsKast p:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.section_whatIsKast p:last-child {
+  margin-bottom: 70px;
 }
