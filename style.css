@@ -190,7 +190,10 @@ ul {
 .navBtnGroup {
   display: flex;
   flex-direction: column;
+  background-color: transparent;
   /* justify-content: space-around; */
+  appearance: none;
+  border: none;
 }
 
 .navButtonLine {
@@ -383,8 +386,8 @@ section {
     order: 3;
     width: 100%;
     align-self: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 
   .navList {
